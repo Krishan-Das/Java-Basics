@@ -4,11 +4,14 @@ import java.util.Scanner;    // This file is essential for taking user Input
 public class Java_Basics {
     public static void main(String[] args) {
 
+        
+//       # ****************************** Taking Input from the user *****************************
+
         // Object creation...
         Scanner sc = new Scanner(System.in);   // Object of Scanner class  --> sc holo Scanner class er akta instace/object.
 
-        System.out.print("Enter a number: ");
         // for taking integer as a Input
+        System.out.print("Enter a number: ");
         int number;      // create variable name: number
         number = sc.nextInt();  // sc --> instance. ***  sc.nextInt();
         System.out.println(number);
@@ -34,6 +37,29 @@ public class Java_Basics {
         System.out.print("you are adult (true/false) : ");
         boolean is_adult = sc.nextBoolean();     // you are adult (true/false) = true
         System.out.println(is_adult);  // --> ture
+
+
+//       # ****************************** Output *****************************
+
+        System.out.println("Hello World!");   // first print --> then go to next line  /   println == print("...\n");
+        System.out.print("Hello World");      //  Just print. if next line is needed then just use '\n';
+        System.out.printf("\nHello World! %d\n", 1);    // It is usefull for c programmers.  coz printf supports %d, %f, %s, %c to helps in concatinations
+        System.out.format("Hello World! %d\n", 2);    // It is same as printf.
+
+
+//        # concatinations
+        String name = "Krishan Das";
+        int age = 19;
+
+        // Methode 1....
+        System.out.print("My name is "+name+" and age "+age);
+
+        // Methode 2....
+        System.out.printf("\n My Name is %s and age is %d", name, age);  // same like c programming language
+        System.out.format("\n My name is %s and age %d", name,age); // same no difference
+
+
+        
 
     }
 }
